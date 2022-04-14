@@ -1,0 +1,10 @@
+five key terms
+execution content: the space set aside in JVS engines memory containing references to the variables and methods that are currently in scope. 
+this: refers to a special object that is part of the current execution context. The vlaue of this is determined based on how and where the function is invoked
+call: A method on a function that calls the function, just like (). The first argument called thisArg, is the object that should be used as the value of this when the function is invoked. You then list any other arguments you want to send to the function after the thisArg.
+ex. calculator.sum.call(multilingualMessages, 1, 2)
+apply: a method on a function, just like ().  The first argument called thisArg, is the object that should be used as the value of this when the function is invoked.You then pass additional arguments you want to send to the function as an array after thisArg. 
+ex. calculator.sum.apply(multilingualMessages, [1, 2])
+bind: method returns a copy of the function its called on, but with the execution context "set" to the arguments thats passed to bind
+ex. sayHello.bind(greenFrog)("Hello") //=> "Mr. GreenFrog says *Hello* to you all."
+
